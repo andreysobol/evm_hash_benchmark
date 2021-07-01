@@ -14,3 +14,9 @@ Execution cost for every hashes (**sha256**, **keccak256**, **ripemd160**)
 | 8 | 78498 | 70844 | 85557 |
 | 9 | 82590 | 73976 | 90278 |
 | 10 | 86681 | 77109 | 94998 |
+
+# Average execution cost
+
+- ```sha256 = 4091 gas```
+- ```keccak = 3132 gas ```
+- ```ripemd160 = 4720 gas```
