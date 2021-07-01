@@ -35,7 +35,7 @@ contract Hasher {
     }
 
     function ripemd160hashes(uint l) public {
-        ripemd = 0xf21849f60ec732e135f2172e1226dbd7e6c5d86b;
+        ripemd = hex"f21849f60ec732e135f2172e1226dbd7e6c5d86b";
         for (uint i=0; i<l; i++) { 
             ripemd = ripemd160(bytes.concat(keccak, b[i]));
         }
