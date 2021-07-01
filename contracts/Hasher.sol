@@ -5,6 +5,7 @@ contract Hasher {
     bytes32[] b ;
     bytes32 sha;
     bytes32 keccak;
+    bytes20 ripemd;
     
     function init() public {
         b.push(0xae248190d583930687a52e2ea07d13c4ca2a6b1c9bf701f5b0417cf453020612);
@@ -30,6 +31,13 @@ contract Hasher {
         keccak = 0xf21849f60ec732e135f2172e1226dbd7e6c5d86bc42c4b7544814cde2dffd6f5;
         for (uint i=0; i<l; i++) { 
             keccak = keccak256(bytes.concat(keccak, b[i]));
+        }
+    }
+
+    function ripemd160hashes(uint l) public {
+        ripemd = 0xf21849f60ec732e135f2172e1226dbd7e6c5d86b;
+        for (uint i=0; i<l; i++) { 
+            ripemd = ripemd160(bytes.concat(keccak, b[i]));
         }
     }
 
