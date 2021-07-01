@@ -21,6 +21,35 @@ Execution cost for every hashes (**sha256**, **keccak256**, **ripemd160**)
 - ```keccak256 = 3132 gas ```
 - ```ripemd160 = 4720 gas```
 
+# Benchmark code 
+
+```
+function sha256hashes(uint l) public {
+    sha = 0xf21849f60ec732e135f2172e1226dbd7e6c5d86bc42c4b7544814cde2dffd6f5;
+    for (uint i=0; i<l; i++) { 
+        sha = sha256(bytes.concat(sha, b32[i]));
+    }
+}
+```
+
+```
+function keccak256hashes(uint l) public {
+    keccak = 0xf21849f60ec732e135f2172e1226dbd7e6c5d86bc42c4b7544814cde2dffd6f5;
+    for (uint i=0; i<l; i++) { 
+        keccak = keccak256(bytes.concat(keccak, b32[i]));
+    }
+}
+```
+
+```
+function ripemd160hashes(uint l) public {
+    ripemd = hex"f21849f60ec732e135f2172e1226dbd7e6c5d86b";
+    for (uint i=0; i<l; i++) { 
+        ripemd = ripemd160(bytes.concat(keccak, b20[i]));
+    }
+}
+```
+
 # Smartcontract
 
 [Hasher.sol](contracts/Hasher.sol)
