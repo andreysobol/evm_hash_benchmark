@@ -1,5 +1,7 @@
 # Benchmarks
 
+Execution cost for every hashes (**sha256**, **keccak256**, **ripemd160**)
+
 | count of hashes | sha256 | keccak256 | ripemd160 |
 |---|---|---|---|
 | 1 | 49859 | 48919 | 52516 |
