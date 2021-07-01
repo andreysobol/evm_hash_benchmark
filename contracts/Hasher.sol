@@ -22,14 +22,14 @@ contract Hasher {
 
         b20.push(hex"ae248190d583930687a52e2ea07d13c4ca2a6b1c");
         b20.push(hex"8a200c44e26a6733105e427ade918dac551ff8a8");
-        b32.push(hex"66b41bb613e41736d2b05cf92b7c16d39c627cab");
-        b32.push(hex"50eb0a1ffd67af1f574c00d0bcd550feb6fc2782");
-        b32.push(hex"cdf3dcbb666d1cfcb3dc3f5a7f23f7cbbbfa16a9");
-        b32.push(hex"55b47cb55d0162d7fb25732e0d86d72d63c4aa03");
-        b32.push(hex"9342642667474bbf02c743c315be8b9ff5f17600");
-        b32.push(hex"d250e44f190f324d808025142524402d1f23d633");
-        b32.push(hex"474445bab1da55f70a55b09535a509fe87ee40dd");
-        b32.push(hex"16358ac2cd6964fe628c910027b36426cfd39764");
+        b20.push(hex"66b41bb613e41736d2b05cf92b7c16d39c627cab");
+        b20.push(hex"50eb0a1ffd67af1f574c00d0bcd550feb6fc2782");
+        b20.push(hex"cdf3dcbb666d1cfcb3dc3f5a7f23f7cbbbfa16a9");
+        b20.push(hex"55b47cb55d0162d7fb25732e0d86d72d63c4aa03");
+        b20.push(hex"9342642667474bbf02c743c315be8b9ff5f17600");
+        b20.push(hex"d250e44f190f324d808025142524402d1f23d633");
+        b20.push(hex"474445bab1da55f70a55b09535a509fe87ee40dd");
+        b20.push(hex"16358ac2cd6964fe628c910027b36426cfd39764");
 
     }
     
