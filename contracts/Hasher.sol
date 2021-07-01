@@ -4,6 +4,7 @@ contract Hasher {
    
     bytes32[] b ;
     bytes32 sha;
+    bytes32 keccak;
     
     function init() public {
         b.push(0xae248190d583930687a52e2ea07d13c4ca2a6b1c9bf701f5b0417cf453020612);
@@ -22,6 +23,13 @@ contract Hasher {
         sha = 0xf21849f60ec732e135f2172e1226dbd7e6c5d86bc42c4b7544814cde2dffd6f5;
         for (uint i=0; i<l; i++) { 
             sha = sha256(bytes.concat(sha, b[i]));
+        }
+    }
+
+    function keccak256hashes(uint l) public {
+        keccak = 0xf21849f60ec732e135f2172e1226dbd7e6c5d86bc42c4b7544814cde2dffd6f5;
+        for (uint i=0; i<l; i++) { 
+            keccak = keccak256(bytes.concat(keccak, b[i]));
         }
     }
 
