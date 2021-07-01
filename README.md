@@ -20,3 +20,7 @@ Execution cost for every hashes (**sha256**, **keccak256**, **ripemd160**)
 - ```sha256 = 4091 gas```
 - ```keccak256 = 3132 gas ```
 - ```ripemd160 = 4720 gas```
+
+# Smartcontract
+
+[Hasher.sol](contracts/Hasher.sol)
